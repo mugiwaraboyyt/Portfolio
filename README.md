@@ -2,7 +2,7 @@
 
 Git remote add Portfolio https://github.com/mugiwaraboyyt/Portfolio.git
 
-Git -v
+Git remote -v
 
 Git push -f Portfolio master
 
