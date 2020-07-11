@@ -219,15 +219,20 @@ h2{
 }
 .projects-container{
 	background:#eee ;
+	padding:40px 20px;
 	display: grid;
 	grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
 	width: 100%;
 	max-width: 1280px;
 	margin: 0 auto;
-	grid-gap: 20px;
+	grid-gap: 50px;
 }
-.projects-container a{
-	border: 1px solid #000;
+.project{
+	background-color: rgb(73, 73, 73);
+	color: #fff;
+	border: 2px solid #000;
+	border-radius: 5px;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
 }
 .project-image{
 	object-fit: cover;
@@ -235,11 +240,15 @@ h2{
 	width: 100%;
 }
 .project-title{
-	background-color: rgb(73, 73, 73);
-	padding: 2rem 0.5;
+	padding: 1rem 0.5rem;
+	text-decoration: none;
 }
 .code{
 	color:rgb(73, 73, 73);
+	transition: color 0.3s ease-out;
+}
+.project:hover .code {
+	color: #ff7f50;
 }
 
 /* --------------------------------Contact----------------------------- */
@@ -303,8 +312,9 @@ h2{
 }
 footer{
     background-color: #ccc;
-    height: 50px;
-    max-width: 980px;
+	height: 50px;
+	width: 100%;
+    /* max-width: 980px; */
     color: #000;
     margin-top: 50px;
     padding-top: 10px;
